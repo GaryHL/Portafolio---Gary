@@ -1,12 +1,9 @@
 import './App.css';
+import React_router from './Router/React_router';
 
 function App() {
   return (
-    <div className="App">
-      <div>
-        <h1>Este es la app base</h1>
-      </div>
-    </div>
+    <React_router/>
   );
 }
 

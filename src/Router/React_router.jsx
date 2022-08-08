@@ -1,8 +1,16 @@
-import React from 'react'
+import React from 'react';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Welcome from '../views/welcome/Welcome'
 
 function React_router() {
   return (
-    <div>React_router</div>
+    <>
+      <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Welcome/>}/>
+          </Routes>
+      </BrowserRouter>
+    </>
   )
 }
 export default React_router
