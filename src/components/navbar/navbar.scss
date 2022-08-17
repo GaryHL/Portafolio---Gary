@@ -1,33 +1,37 @@
+$bgColor:#558680;
+$titleColor:#F2EFC2;
+$darckGreenColor:#284040;
+$ligthGreenColor:#9BBFA0;
+
 .container_nav{
     min-width:92vw;
     display:flex;
     justify-content: space-between;
-    margin:4vh;
+    margin:2.5vh 2vh 2.5vh 4vh;
     position:fixed;
     z-index: 2;
     h2{z-index: 2;
-        font-weight: 300;
+    font-weight: 300;
     cursor:pointer}
 
     .container_icons{
         display:flex;
         z-index: 2;
         svg{
-            width:4vh;
-            height:4vh;
-            margin:0vh 1vh;
+            width:3.5vh;
+            height:3.5vh;
+            margin:0vh 2vh;
             cursor:pointer;
         }
         .menu{
             cursor:pointer;
-            margin:0vh 1vh 0vh 10px;
-            
+            margin:-0.5vh 0vw 0vh 10px;
 
             .line{
                 width: 3rem;
                 height:0.2rem;
                 background-color:rgb(34, 34, 34);
-                margin:0.5rem 0.5rem 0rem 0rem;
+                margin:0.5rem 0rem 0rem 0rem;
                 
             }
         }
@@ -41,12 +45,14 @@
     display:flex;
     justify-content:center;
     align-items:center;
-    background-color:rgba(168, 114, 194, 0.384);
-    color:rgb(20, 20, 20);
+    background-color:$darckGreenColor;
+    color:$titleColor;
     z-index:0;
+    position:fixed;
     ul{
         text-align:center;
         width:100vw;
+        padding:0;
     }
     li{
         list-style: none;

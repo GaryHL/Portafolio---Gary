@@ -1,19 +1,21 @@
 import React from 'react'
 import './info_section.scss'
-import Avatar from '../../assets/images/avatar.svg' 
-
 function info_section(props) {
+
   return (
     <div className="container_info_section">
         <div className="container_image">
-            <h2>{props.title}</h2>
-            <img src={Avatar}/>
+            <img src={props.img}/>
         </div>
-        <div className="lines">
-            <div className="line"></div>
+        <div className="container_details">
+          <h2>{props.title}<br/> {props.title2}</h2>
+          <div className="lines">
+              <div className="line l1"></div>
+              <div className="line l2"></div>
+          </div>
+          <h3>{props.subtitle}</h3>
+          {props.cta_zone}
         </div>
-        <h3>{props.subtitle}</h3>
-        <h3>{props.description}</h3>
     </div>
   )
 }

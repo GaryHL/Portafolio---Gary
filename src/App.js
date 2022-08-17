@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import React_router from './Router/React_router';
 
 function App() {
