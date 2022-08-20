@@ -1,0 +1,108 @@
+
+[  
+    {
+        "id": 1,
+
+        "title": "Ecomerce",
+        
+        "img" : "https://peslam.com/wp-content/uploads/2017/05/original4.jpg",
+
+        "rol" : "Developer / Scrum Master",
+
+        "date" : "12 feb 2022",
+
+        "overview" : "It is an application to keep people informed about the situation of covid-19 worldwide.The data is updated automatically and userscan see detailed information for each country.",
+        
+        "concept" : "It is an application to keep people informed about the situation of covid-19 worldwide.The data is updated automatically and userscan see detailed information for each country.",
+        
+        "development" : "It is an application to keep people informed about the situation of covid-19 worldwide.The data is updated automatically and userscan see detailed information for each country.",
+        
+        "deployment" : "https://github.com",
+        
+        "repositorio" : "https://github.com"
+    },
+    {
+        "id": 2,
+
+        "title": "Music dom",
+        
+        "img" : "https://www.amara-marketing.com/hs-fs/hubfs/images/Web%20Panic.jpg?width=1100&name=Web%20Panic.jpg ",
+
+        "rol" : "Developer ",
+
+        "date" : "99  oct 2022",
+
+        "overview" : "It is an application to keep people informed about the situation of covid-19 worldwide.The data is updated automatically and userscan see detailed information for each country.",
+        
+        "concept" : "It is an application to keep people informed about the situation of covid-19 worldwide.The data is updated automatically and userscan see detailed information for each country.",
+        
+        "development" : "It is an application to keep people informed about the situation of covid-19 worldwide.The data is updated automatically and userscan see detailed information for each country.",
+        
+        "deployment" : "https://github.com",
+        
+        "repositorio" : "https://github.com"
+    },
+    {
+        "id": 3,
+
+        "title": "Calculator",
+        
+        "img" : "https://blog.hubspot.es/hubfs/paginaswebejemplosgiphy.jpeg",
+
+        "rol" : "Developer product owner",
+
+        "date" : "9 de marzo 2022",
+
+        "overview" : "It is an application to keep people informed about the situation of covid-19 worldwide.The data is updated automatically and userscan see detailed information for each country.",
+        
+        "concept" : "It is an application to keep people informed about the situation of covid-19 worldwide.The data is updated automatically and userscan see detailed information for each country.",
+        
+        "development" : "It is an application to keep people informed about the situation of covid-19 worldwide.The data is updated automatically and userscan see detailed information for each country.",
+        
+        "deployment" : "https://github.com",
+        
+        "repositorio" : "https://github.com"
+    },
+    {
+        "id": 4,
+
+        "title": "Covid Tracker",
+        
+        "img" : "https://www.amara-marketing.com/hs-fs/hubfs/images/My%20Grandmother's%20Lingo%20web%20ejemplo.jpg?width=1100&name=My%20Grandmother%27s%20Lingo%20web%20ejemplo.jpg",
+
+        "rol" : "tutor",
+
+        "date" : "7 abril 2022",
+
+        "overview" : "It is an application to keep people informed about the situation of covid-19 worldwide.The data is updated automatically and userscan see detailed information for each country.",
+        
+        "concept" : "It is an application to keep people informed about the situation of covid-19 worldwide.The data is updated automatically and userscan see detailed information for each country.",
+        
+        "development" : "It is an application to keep people informed about the situation of covid-19 worldwide.The data is updated automatically and userscan see detailed information for each country.",
+        
+        "deployment" : "https://github.com",
+        
+        "repositorio" : "https://github.com"
+    },
+    {
+        "id": 5,
+
+        "title": "Api de rick y morty",
+        
+        "img" : "https://www.amara-marketing.com/hs-fs/hubfs/BLOG-FILES/Robby%20Leonardi%2C%20la%20gamificacio%CC%81n%20del%20CV.png?width=1906&name=Robby%20Leonardi%2C%20la%20gamificacio%CC%81n%20del%20CV.png",
+
+        "rol" : "director del la empresa",
+
+        "date" : "7 agosto 2022",
+
+        "overview" : "It is an application to keep people informed about the situation of covid-19 worldwide.The data is updated automatically and userscan see detailed information for each country.",
+        
+        "concept" : "It is an application to keep people informed about the situation of covid-19 worldwide.The data is updated automatically and userscan see detailed information for each country.",
+        
+        "development" : "It is an application to keep people informed about the situation of covid-19 worldwide.The data is updated automatically and userscan see detailed information for each country.",
+        
+        "deployment" : "https://github.com",
+        
+        "repositorio" : "https://github.com"
+    }
+]
