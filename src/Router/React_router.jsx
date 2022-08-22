@@ -8,9 +8,9 @@ function React_router() {
   return (
     <>
       <BrowserRouter>
-      <Navbar/>
           <Routes>
             <Route path="/" element={<Welcome/>}/>
+            <Route path="/welcome" element={<Welcome/>}/>
             <Route path="/projects" element={<Projects/>}/>
           </Routes>
       </BrowserRouter>

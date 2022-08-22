@@ -9,11 +9,13 @@ import Projects from '../../assets/images/projects.png'
 import Contact from '../../assets/images/contactme.png'
 import Vacio from '../../assets/images/Vacio.svg'
 import {Link}from 'react-router-dom'
+import Navbar from '../../components/navbar/Navbar'
 
 function Welcome ()  {
   return (
     <>
       <Loader_welcome/>
+      <Navbar/>
       <div className="container">
         <section className="section">
           <Info_section title="Hola,"title2="Soy Gary"
@@ -40,7 +42,7 @@ function Welcome ()  {
         <Info_section title="Contactame"title2=" "
         img={Vacio} 
                 cta_zone={
-                  <Link to="./projects" className="btn_cta">
+                  <Link to="/projects" className="btn_cta">
                   <Cta_button text="Contactame <-"/>
                   </Link>}
               />
