@@ -2,16 +2,17 @@ import React from "react";
 import "./info_section.scss";
 import Tilt  from "react-vanilla-tilt";
 
+
 function Info_section(props) {
   
   return (
     <div className="container_info_section">
-      <div className="container_image">
-        <Tilt className="tilt">
+      <div className="container_image" data-aos="zoom-in-down">
+        <Tilt className="tilt" >
           <img src={props.img} />
         </Tilt>
       </div>
-      <div className="container_details">
+      <div className="container_details" data-aos="zoom-in-down">
         <h2>
           {props.title}
           <br /> {props.title2}

@@ -1,0 +1,115 @@
+.container_contact{
+position:absolute;
+z-index:5;
+width:100vw;
+height:100vh;
+align-items:center;
+justify-content:center;
+display:flex;
+animation:form_init 2s;
+background-color:#2a3b3b33;
+    .container_form{
+        display:flex;
+        flex-direction:column;
+        border-radius:10%;
+        background-color:rgba(255, 255, 255, 0.562);
+        width:50vh;
+        align-items:center;
+        padding:4vh 2vh;
+        box-shadow: 0vh 0vh 5vh rgba(65, 65, 65, 0.842);
+        h1{
+            font-weight: 700;
+            color:#374E4E;
+            letter-spacing: 0.5vh;
+            margin:1vh;
+        }
+        label{
+            font-size:3vh;
+            font-weight: 300;
+            margin:1vh 0vh;
+        }
+        .input_date{
+            border:0;
+            background-color:#F8F9F9;
+            border-radius:1vh;
+            font-weight:300;
+            width: 75%;
+            height:4.5vh;
+            padding:1vh;
+            color:#5151519d;
+            box-shadow: 0vh 0vh 1vh rgba(65, 65, 65, 0.336);
+            margin: 1vh 0vh;
+            &:focus{
+                background-color:#dfdfdf;
+                border:0;
+                outline:none;
+                color:#515151fd;
+            }
+        }
+        textarea{
+            border:0;
+            border-radius:1vh;
+            font-weight:300;
+            padding:1vh;
+            margin:2vh 0vh;
+            width:75%;
+            height:10.5vh;
+            box-shadow: 0vh 0vh 1vh rgba(65, 65, 65, 0.336);
+            &:focus{
+                background-color:rgb(235, 235, 235);
+                border:0;
+                outline:none;
+            }
+        }
+        .send{
+            border:none;
+            width:60%;
+            border-radius:3vh;
+            height:5vh;
+            background-color:#374E4E;
+            color:#F2EFC2;
+            font-size:2.5vh;
+            font-weight: 700;
+            letter-spacing: 0.5vh;
+            cursor:pointer;
+            &:hover{
+                box-shadow: 0vh 0vh 1vh rgba(65, 65, 65, 0.336);
+                background-color:#2a3b3b;
+            }
+        }
+        
+    }
+}
+
+.container_contact.open{
+    animation:openContact 0.5s;
+    opacity:1;
+    @keyframes openContact{
+        0%{
+            opacity:0;
+        }
+        100%{
+            opacity:1;
+        }
+    }
+}
+
+.container_contact.close{
+    animation:closeContact 0.5s;
+    opacity:0;
+    z-index:-1;
+    @keyframes closeContact{
+        0%{
+            opacity:1;
+            z-index:1;
+        }
+        90%{
+            opacity:0;
+            z-index:1;
+        }
+        100%{
+            opacity:0;
+            z-index:-1;
+        }
+    }
+}

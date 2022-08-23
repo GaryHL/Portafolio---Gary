@@ -3,8 +3,11 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Welcome from '../views/welcome/Welcome'
 import Projects from '../views/projects/Projects';
 import Navbar from '../components/navbar/Navbar'
+import AOS from 'aos';
+
 
 function React_router() {
+  AOS.init();
   return (
     <>
       <BrowserRouter>

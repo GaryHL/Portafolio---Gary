@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import {Link}from 'react-router-dom'
 import '../navbar/navbar.scss'
 import { BsGithub } from "react-icons/bs";
 import { BsLinkedin } from "react-icons/bs";
@@ -25,10 +26,26 @@ function Navbar() {
       </div>
       <div className={`menu_nav ${clicked ? 'open' : "close"}`}>
         <ul>
-          <li>INICIO</li>
-          <li>PROYECTOS</li>
-          <li>SOBRE MI</li>
-          <li>CONTACTO</li>
+          <li>
+            <a href="#home" onClick={()=> setClicked(!clicked)}>
+              HOME
+            </a>
+          </li>
+          <li>
+            <a href="#projects" onClick={()=> setClicked(!clicked)}>
+              PROYECTOS
+            </a>
+          </li>
+          <li>
+            <a href="#about" onClick={()=> setClicked(!clicked)}>
+              SOBRE MI
+            </a>
+          </li>
+          <li>
+            <a href="#contact" onClick={()=> setClicked(!clicked)}>
+              CONTACTO
+            </a>
+          </li>
         </ul>
       </div> 
     </>

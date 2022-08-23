@@ -32,6 +32,8 @@ $ligthGreenColor:#9BBFA0;
             box-shadow : 1vh 1vh 1vh transparent !important;
             &:hover{
                 box-shadow : 1vh 1vh 1vh red transparent !important;
+                z-index:0 !important;
+
             }
         }
         img{
@@ -45,6 +47,7 @@ $ligthGreenColor:#9BBFA0;
                     width:100%;
                     height:100%;
                     transition:0.5s;
+                    
                 }
             }
         }
