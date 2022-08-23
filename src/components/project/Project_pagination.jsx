@@ -68,12 +68,12 @@ function Project_pagination() {
                       <h2>Final result</h2>
                       <div className="links_project">
                         <div className="square_button">Visitar sitio</div>
-                        <div className="square_button">Visitar sitio</div>
+                        <div className="square_button">Repositorio en Github</div>
                       </div>
                     </div>
                     <div className="back">
-                      <h2>BACK</h2>
                       <Link to="/welcome">
+                        <h2>BACK</h2>
                         <BsArrowLeft  className="arrow"/>
                       </Link>
                     </div>

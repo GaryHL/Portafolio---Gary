@@ -18,7 +18,7 @@ $ligthGreenColor:#9BBFA0;
     flex-direction: column;
     h1{
         font-size:4vh;
-        font-weight: 500;
+        font-weight: 700;
         letter-spacing: 1vh;
         color: #F2EFC2;
     }
@@ -62,4 +62,17 @@ $ligthGreenColor:#9BBFA0;
     100%{
         margin-top:-100vh;
     }
+}
+
+.fast_change{
+    position:fixed;
+    width:100vw;
+    height:100vh;
+    background-color:$darckGreenColor;
+    display:flex;
+    margin-top:-100vh;
+    animation:loader_welcome 1s;
+    z-index: 3;
+    flex-direction: column;
+    
 }

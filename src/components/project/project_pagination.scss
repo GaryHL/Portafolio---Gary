@@ -27,11 +27,11 @@
                 color:#385855;
                 
                 h2{
-                    font-weight:400;
+                    font-weight:700;
                     font-size:4vh;
                 }
                 p{
-                    font-weight:200;
+                    font-weight:400;
                     font-size:2vh;
                     animation:cambio 1s;
                 }
@@ -123,6 +123,7 @@
                     cursor:pointer;
                     border-radius:1vh ;
                     transition:0.3s;
+                    user-select: none;
                     &:hover{
                     background-color:#32504c;
                     box-shadow:0vh 0vh 1vh #32504c;
@@ -147,7 +148,7 @@
             align-items: center;
             background-color:#F5FFF7;
             h2{
-                font-weight:300;
+                font-weight:700;
                 margin:2vh;
                 }
             .links_project{
@@ -159,13 +160,14 @@
                     height:5vh;
                     background-color:#3d6661;
                     color:#F2EFC2;
-                    font-size:1.5vh;
+                    font-size:2vh;
                     align-items:center;
                     justify-content:center;
                     display:flex;
                     font-weight:700;
                     cursor:pointer;
                     margin:1vh 0vh;
+                    user-select: none;
                     border-radius:1vh ;
                 transition:0.3s;
                 &:hover{

@@ -8,7 +8,10 @@ $ligthGreenColor:#9BBFA0;
   margin:0;
   padding:0;
   .btn_cta{
-    width:20vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+      width:22vh;
       height:6vh;
       background-color:$darckGreenColor;
       transition:0.5s;
@@ -26,8 +29,9 @@ $ligthGreenColor:#9BBFA0;
       width:22vh; } 
     }
     h2{
-      font-size:14px;
-      letter-spacing:2.5px;
-      font-weight:100;
+      margin-left:2px;
+      font-size:2vh;
+      letter-spacing:2px;
+      font-weight:800;
   }
 }

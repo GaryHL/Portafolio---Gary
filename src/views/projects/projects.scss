@@ -1,0 +1,14 @@
+.container{
+    scroll-snap-type:y mandatory;
+    overflow-y: scroll;
+    height:100vh;
+    transition:3s;
+    .section{
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    scroll-snap-align:start;
+    transition:3s;}
+    
+}
