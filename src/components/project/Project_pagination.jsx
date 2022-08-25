@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import "./project_pagination.scss";
 import Project from "../../data projects/projects.json";
-import {Link}from 'react-router-dom'
+import { Link } from "react-router-dom";
 import { BsArrowLeft } from "react-icons/bs";
 
 function Project_pagination() {
@@ -68,13 +68,16 @@ function Project_pagination() {
                       <h2>Final result</h2>
                       <div className="links_project">
                         <div className="square_button">Visitar sitio</div>
-                        <div className="square_button">Repositorio en Github</div>
+                        <div className="square_button">
+                          Repositorio en Github
+                        </div>
                       </div>
                     </div>
+
                     <div className="back">
                       <Link to="/welcome">
                         <h2>BACK</h2>
-                        <BsArrowLeft  className="arrow"/>
+                        <BsArrowLeft className="arrow" />
                       </Link>
                     </div>
                   </div>

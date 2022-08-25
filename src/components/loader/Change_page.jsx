@@ -3,9 +3,7 @@ import './loader.scss'
 
 function Change_page () {
   return (
-    <div className="fast_change">
-        
-    </div>
+    <div className="fast_change"></div>
   )
 }
 

@@ -6,11 +6,11 @@ import {Link}from 'react-router-dom'
 function Cta_button(props){
   return (
     <>
-        <div className="container_cta">
-          <button className="btn_cta" >
-            <h2>{props.text}</h2>
-          </button>
-        </div>
+      <div className="container_cta">
+        <button className="btn_cta" >
+          <h2>{props.text}</h2>
+        </button>
+      </div>
     </>
   )
 }

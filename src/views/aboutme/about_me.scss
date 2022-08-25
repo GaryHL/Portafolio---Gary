@@ -1,0 +1,53 @@
+$bgColor:#558680;
+$titleColor:#F2EFC2;
+$darckGreenColor:#284040;
+$ligthGreenColor:#9BBFA0;
+
+.container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+    transition: 3s;
+    .section_about {
+      height: 100vh;
+      display: flex;
+      flex-wrap:wrap;
+      align-items:flex-start;
+      scroll-snap-align: start;
+      transition: 3s;
+      background-color:#F5FFF7;
+      .title_section{
+        display:flex;
+        align-items:center;
+        height:10%;
+          .line{
+              width:5vh;
+              height:0.2vh;
+              margin:0vh 1vh;
+              background-color:$darckGreenColor;
+              position:relative;
+          }
+          h2{
+            font-weight: 300;
+            color:$darckGreenColor;
+            opacity: 0.8;
+            font-size:3vh;
+            padding:3vh;
+            letter-spacing: 0.5vh;
+          }
+        }
+    }
+    .me{
+      display:flex;
+      
+      position:relative;
+      &:before{
+        content:"";
+        width:100vw;
+        position:absolute;
+        height:50%;
+        background-color:$ligthGreenColor;
+      }
+    }
+}
+
