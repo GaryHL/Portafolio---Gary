@@ -19,6 +19,7 @@ $ligthGreenColor:#9BBFA0;
       .title_section{
         display:flex;
         align-items:center;
+        width:100vw;
         height:10%;
           .line{
               width:5vh;
@@ -32,14 +33,13 @@ $ligthGreenColor:#9BBFA0;
             color:$darckGreenColor;
             opacity: 0.8;
             font-size:3vh;
-            padding:3vh;
+            padding:4vh;
             letter-spacing: 0.5vh;
           }
         }
     }
     .me{
       display:flex;
-      
       position:relative;
       &:before{
         content:"";
@@ -47,6 +47,20 @@ $ligthGreenColor:#9BBFA0;
         position:absolute;
         height:50%;
         background-color:$ligthGreenColor;
+      }
+    }
+    .hobbies{
+      width:100vw;
+      height:auto;
+      min-height:100vh;
+    } 
+    
+    .set_skill{
+      .container_set_skills{
+        display:flex;
+        margin-top:-8vh;
+        flex-wrap:wrap;
+        justify-content: center;
       }
     }
 }
