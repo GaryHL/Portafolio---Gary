@@ -1,6 +1,5 @@
 import React from 'react'
 import {useState} from 'react'
-import { SassString } from 'sass'
 import './skillBar.scss'
 
 function Skillbar  (props)  {
