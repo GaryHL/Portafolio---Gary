@@ -21,6 +21,7 @@ export const ContactUs = () => {
       );
     e.target.reset();
   };
+
   const [formActive, setFormActive] = useState(false);
 
   return (
@@ -44,18 +45,15 @@ export const ContactUs = () => {
             placeholder="Tu email"
           />
           <textarea 
-          name="message" 
-          placeholder="Tu mensaje"
-          />
+          name="message"
+          placeholder="Tu mensaje" />
           <input 
-          type="submit" 
-          value="Send" 
-          className="send" 
-          />
+            type="submit"
+            value="Send" 
+            className="send" />
         </form>
       </div>
-      <div className={`background_form ${formActive ? "close" : "open"}`}>
-      </div>
+      <div className={`background_form ${formActive ? "close" : "open"}`}></div>
     </>
   );
 };

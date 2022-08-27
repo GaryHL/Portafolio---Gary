@@ -1,33 +1,30 @@
-$bgColor:#558680;
-$titleColor:#F2EFC2;
-$darckGreenColor:#284040;
-$ligthGreenColor:#9BBFA0;
+@import "../../base_styles/variables.scss";
 
-.card_hobbie{
-    width:18rem;
-    height:80%;
-    margin:  10vh auto auto  auto;
-    .container_icon_hobbie{
-        width:18rem;
-        height:18rem;
-        img{
-            width:100%;
-            height:100%;
-        }
+.card_hobbie {
+  width: 18rem;
+  height: 80%;
+  margin: 10vh auto auto auto;
+  .container_icon_hobbie {
+    width: 18rem;
+    height: 18rem;
+    img {
+      width: 100%;
+      height: 100%;
     }
-    h2{
-        text-align:center;
-        color: $darckGreenColor;
-        font-weight:300;
-        margin: 3vh 0vh;
-    }
-    p{
-        letter-spacing:0.2vh;
-    }
+  }
+  h2 {
+    text-align: center;
+    color: $darckGreenColor;
+    font-weight: 300;
+    margin: 3vh 0vh;
+  }
+  p {
+    letter-spacing: 0.2vh;
+  }
 }
 
 @media (min-width: 1000px) {
-    .card_hobbie{
-        margin-top:-5vh;
-    }
+  .card_hobbie {
+    margin-top: -5vh;
+  }
 }

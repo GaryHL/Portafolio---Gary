@@ -1,67 +1,64 @@
-$bgColor:#558680;
-$titleColor:#F2EFC2;
-$darckGreenColor:#284040;
-$ligthGreenColor:#9BBFA0;
+@import "../../base_styles/variables.scss";
 
-.container_me{
-    position:relative;
-    display:flex;
-    flex-wrap:wrap;
-    height:80%;
-    width:100vw;
-    justify-content: center;
+.container_me {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  height: 80%;
+  width: 100vw;
+  justify-content: center;
 
-    h3{
-        font-size:3vh;
-        color:$titleColor;
-        margin:1vh 0vh;
-        text-shadow:0vh 0vh 0.5vh $darckGreenColor;
-        letter-spacing: 0.5vh;
+  h3 {
+    font-size: 3vh;
+    color: $titleColor;
+    margin: 1vh 0vh;
+    text-shadow: 0vh 0vh 0.5vh $darckGreenColor;
+    letter-spacing: 0.5vh;
+  }
+  p {
+    font-size: 2vh;
+    color: $darckGreenColor;
+    letter-spacing: 0.3vh;
+  }
+  .container_description_me {
+    width: 18rem;
+    height: auto;
+  }
+  .container_image_me {
+    width: 18rem;
+    height: 18rem;
+    border-radius: 1vh;
+    background-color: transparent;
+    img {
+      border-radius: 1vh;
+      width: 100%;
+      height: 100%;
+      user-select: none;
+      box-shadow: 0vh 0vh 2.5vh $darckGreenColor;
     }
-    p{
-        font-size:2vh;
-        color:$darckGreenColor;
-        letter-spacing: 0.3vh;
-    }
-    .container_description_me{
-        width:18rem;
-        height:auto;
-    }
-    .container_image_me{
-        width:18rem;
-        height:18rem;
-        border-radius:1vh;
-        background-color:transparent;
-        img{
-            border-radius:1vh;
-            width:100%;
-            height:100%;
-            user-select: none;
-            box-shadow:0vh 0vh 2.5vh $darckGreenColor;
-        }
-    }
+  }
 }
-@media  (min-width: 700px) {
-    .container_me{
-        h3{
-            font-size:3.5vh;
-        }
-        p{
-            font-size:2.5vh;
-        }
-    .container_description_me{
-        width:40%;
-        height:auto;
-        margin:5%;
+@media (min-width: 700px) {
+  .container_me {
+    h3 {
+      font-size: 3.5vh;
     }
-    .container_image_me{
-        width:40%;
-        height:25rem;
-        margin:5%;
-        border-radius:4vh;
-        img{
-            border-radius:4vh;
-        }
+    p {
+      font-size: 2.5vh;
     }
-    }    
+    .container_description_me {
+      width: 40%;
+      height: auto;
+      margin: 5%;
+    }
+    .container_image_me {
+      width: 40%;
+      height: 25rem;
+      margin: 5%;
+      border-radius: 4vh;
+      img {
+        border-radius: 4vh;
+      }
+    }
+  }
 }

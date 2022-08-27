@@ -1,18 +1,17 @@
-import React from 'react'
-import './cta_button.scss'
-import {Link}from 'react-router-dom'
+import React from "react";
+import "./cta_button.scss";
 
 
-function Cta_button(props){
+function Cta_button(props) {
   return (
     <>
       <div className="container_cta">
-        <button className="btn_cta" >
+        <button className="btn_cta">
           <h2>{props.text}</h2>
         </button>
       </div>
     </>
-  )
+  );
 }
 
-export default Cta_button
+export default Cta_button;
