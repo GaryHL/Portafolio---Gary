@@ -5,6 +5,7 @@ import Hobbie from "../../components/Hobbie/Hobbie";
 import SkillBar from "../../components/skillbar/Skillbar";
 import Info_section_active from "../../components/info_section_active/Info_section_active";
 import { useState } from "react";
+import { SiJavascript } from "react-icons/si";
 import "./about_me.scss";
 
 function About_me() {
@@ -99,16 +100,59 @@ function About_me() {
         </div>
         <div className="container_set_skills">
           <SkillBar
+            nameSkill="JavaScript"
+            timePractice="3 Months"
+            percentSkill="40%"
+            iconSkill={<SiJavascript />}
             progressBar={
-              <div className="progress_skill" style={{ width: "10%" }}></div>
+              <div className="progress_skill" style={{ width: "40%" }}></div>
             }
-          ></SkillBar>
-          <SkillBar></SkillBar>
-          <SkillBar></SkillBar>
-          <SkillBar></SkillBar>
-          <SkillBar></SkillBar>
-          <SkillBar></SkillBar>
-          <SkillBar></SkillBar>
+          />
+          <SkillBar
+            nameSkill="JavaScript"
+            timePractice="3 Months"
+            percentSkill="40%"
+            iconSkill={<SiJavascript />}
+            progressBar={
+              <div className="progress_skill" style={{ width: "40%" }}></div>
+            }
+          />
+          <SkillBar
+            nameSkill="HTML"
+            timePractice="3 Months"
+            percentSkill="40%"
+            iconSkill={<SiJavascript />}
+            progressBar={
+              <div className="progress_skill" style={{ width: "40%" }}></div>
+            }
+          />
+          <SkillBar
+            nameSkill="FIGMA"
+            timePractice="3 Months"
+            percentSkill="40%"
+            iconSkill={<SiJavascript />}
+            progressBar={
+              <div className="progress_skill" style={{ width: "40%" }}></div>
+            }
+          />
+          <SkillBar
+            nameSkill="CONTRA"
+            timePractice="3 Months"
+            percentSkill="40%"
+            iconSkill={<SiJavascript />}
+            progressBar={
+              <div className="progress_skill" style={{ width: "40%" }}></div>
+            }
+          />
+          <SkillBar
+            nameSkill="JavaScript"
+            timePractice="3 Months"
+            percentSkill="40%"
+            iconSkill={<SiJavascript />}
+            progressBar={
+              <div className="progress_skill" style={{ width: "40%" }}></div>
+            }
+          />
         </div>
       </div>
     </div>
