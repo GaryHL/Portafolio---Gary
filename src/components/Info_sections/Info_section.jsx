@@ -18,7 +18,7 @@ function Info_section(props) {
           <br /> {props.title2}
         </h2>
         <div className="lines">
-          <div clasFsName="line l1"></div>
+          <div className="line l1"></div>
           <div className="line l2"></div>
         </div>
         <h3>{props.subtitle}</h3>

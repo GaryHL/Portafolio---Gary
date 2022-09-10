@@ -3,10 +3,9 @@ import { useState } from "react";
 import "./project_pagination.scss";
 import Project from "../../data projects/projects.json";
 import { Link } from "react-router-dom";
-import { BsArrowLeft } from "react-icons/bs";
+import { BsArrowLeft, BsFillArrowLeftCircleFill, BsFillArrowRightCircleFill} from "react-icons/bs";
 
 function Project_pagination() {
-  //carrusel de una sola imagen o bueno, varias imagenes
   const [itemActive, setItemActive] = useState(1);
 
   const nextItem = () => {
@@ -16,8 +15,6 @@ function Project_pagination() {
   const prevItem = () => {
     setItemActive(itemActive === 1 ? 5 : itemActive - 1);
   };
-
-  // fin del carrusel de imagenes
 
   return (
     <>
@@ -43,27 +40,27 @@ function Project_pagination() {
                       </article>
                     </div>
 
-                    <div className="container_image_project">
-                      <div className="project_image">
-                        <div className="container_prueba_image">
+                    {window.innerWidth < 900 ? (
+                      <div className="container_change_project">
+                        <div className="container_image_project">
                           <img src={project.img} />
                         </div>
+                        <div className="change_buttons">
+                          <BsFillArrowLeftCircleFill onClick={prevItem} />
+                          <h3>{project.title}</h3>
+                          <BsFillArrowRightCircleFill onClick={nextItem} />
+                        </div>
                       </div>
+                    ) : (
                       <div className="container_change_project">
-                        <div onClick={prevItem} className="btn_change_project">
-                          Anterior
+                          <BsFillArrowLeftCircleFill onClick={prevItem} />
+                        <div className="container_image_project">
+                          <img src={project.img} />
+                          <h3>{project.title}</h3>
                         </div>
-                        <div className="pagination">
-                          <div className="point_pagination"></div>
-                          <div className="point_pagination"></div>
-                          <div className="point_pagination"></div>
-                        </div>
-                        <div onClick={nextItem} className="btn_change_project">
-                          Siguiente
-                        </div>
+                          <BsFillArrowRightCircleFill onClick={nextItem} />
                       </div>
-                    </div>
-
+                    )}
                     <div className="container_final_result">
                       <h2>Final result</h2>
                       <div className="links_project">
@@ -73,7 +70,6 @@ function Project_pagination() {
                         </div>
                       </div>
                     </div>
-
                     <div className="back">
                       <Link to="/welcome">
                         <h2>BACK</h2>
