@@ -3,7 +3,12 @@ import { useState } from "react";
 import "./project_pagination.scss";
 import Project from "../../data projects/projects.json";
 import { Link } from "react-router-dom";
-import { BsArrowLeft, BsFillArrowLeftCircleFill, BsFillArrowRightCircleFill} from "react-icons/bs";
+import {
+  BsArrowLeft,
+  BsFillArrowLeftCircleFill,
+  BsFillArrowRightCircleFill,
+} from "react-icons/bs";
+import TextAndImg from "../../components/text_and_img/TextAndImg";
 
 function Project_pagination() {
   const [itemActive, setItemActive] = useState(1);
@@ -18,70 +23,84 @@ function Project_pagination() {
 
   return (
     <>
-      <div className="container_projects">
-        {Project &&
-          Project.map((project) => {
-            return (
-              <div key={project.id}>
-                {itemActive === project.id && (
-                  <div className="container_project">
-                    <div className="container_data_project">
-                      <article>
-                        <h2>Rol:</h2>
-                        <p>{project.rol}</p>
-                      </article>
-                      <article>
-                        <h2>Date:</h2>
-                        <p>{project.date}</p>
-                      </article>
-                      <article>
-                        <h2>Overview:</h2>
-                        <p>{project.overview}</p>
-                      </article>
+      <section className="section">
+        <div className="container_projects">
+          {Project &&
+            Project.map((project) => {
+              return (
+                <div key={project.id}>
+                  {itemActive === project.id && (
+                    <div className="container_project container">
+                      <div className="container_data_project">
+                        <article>
+                          <h2>Rol:</h2>
+                          <p>{project.rol}</p>
+                        </article>
+                        <article>
+                          <h2>Date:</h2>
+                          <p>{project.date}</p>
+                        </article>
+                        <article>
+                          <h2>Overview:</h2>
+                          <p>{project.overview}</p>
+                        </article>
+                      </div>
+                      <div className="container_change_project">
+                        {window.innerWidth < 900 ? (
+                          <>
+                            <div className="container_image_project">
+                              <img src={project.img} />
+                            </div>
+                            <div className="change_buttons">
+                              <BsFillArrowLeftCircleFill onClick={prevItem} />
+                              <h3>{project.title}</h3>
+                              <BsFillArrowRightCircleFill onClick={nextItem} />
+                            </div>
+                          </>
+                        ) : (
+                          <>
+                            <BsFillArrowLeftCircleFill onClick={prevItem} />
+                            <div className="container_image_project">
+                              <img src={project.img} />
+                              <h3>{project.title}</h3>
+                            </div>
+                            <BsFillArrowRightCircleFill onClick={nextItem} />
+                          </>
+                        )}
+                      </div>
                     </div>
+                  )}
+                </div>
+              );
+            })}
+        </div>
+      </section>
 
-                    {window.innerWidth < 900 ? (
-                      <div className="container_change_project">
-                        <div className="container_image_project">
-                          <img src={project.img} />
-                        </div>
-                        <div className="change_buttons">
-                          <BsFillArrowLeftCircleFill onClick={prevItem} />
-                          <h3>{project.title}</h3>
-                          <BsFillArrowRightCircleFill onClick={nextItem} />
-                        </div>
-                      </div>
-                    ) : (
-                      <div className="container_change_project">
-                          <BsFillArrowLeftCircleFill onClick={prevItem} />
-                        <div className="container_image_project">
-                          <img src={project.img} />
-                          <h3>{project.title}</h3>
-                        </div>
-                          <BsFillArrowRightCircleFill onClick={nextItem} />
-                      </div>
-                    )}
-                    <div className="container_final_result">
-                      <h2>Final result</h2>
-                      <div className="links_project">
-                        <div className="square_button">Visitar sitio</div>
-                        <div className="square_button">
-                          Repositorio en Github
-                        </div>
-                      </div>
-                    </div>
-                    <div className="back">
-                      <Link to="/welcome">
-                        <h2>BACK</h2>
-                        <BsArrowLeft className="arrow" />
-                      </Link>
-                    </div>
-                  </div>
-                )}
-              </div>
-            );
-          })}
-      </div>
+      {Project &&
+        Project.map((project) => {
+          return (
+            <div key={project.id}>
+              {itemActive === project.id && (
+                <>
+                  <section className="section">
+                    <TextAndImg
+                      title={project.title}
+                      text={project.concept}
+                      img={project.img}
+                    />
+                  </section>
+                  <section className="section">
+                    <TextAndImg
+                      title={project.title}
+                      text={project.concept}
+                      img={project.img}
+                    />
+                  </section>
+                </>
+              )}
+            </div>
+          );
+        })}
     </>
   );
 }

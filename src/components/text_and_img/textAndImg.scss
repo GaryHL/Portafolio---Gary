@@ -1,0 +1,54 @@
+@import "../../base_styles/variables.scss";
+
+.section_textAndImg{
+    display:flex;
+    flex-direction:column;
+    background-color:$backgroundLightColor;
+    .title_section_textAndImg{
+        height: 10vh;
+        display:flex;
+        align-items: center;
+        font-weight:300;
+        opacity: 0.8;
+        font-size:3vh;
+        letter-spacing: 0.5vh;
+        &::before{
+            content:"";
+            background-color:$darckGreenColor;
+            width:6vh;
+            height:0.2vh;
+            margin:2vh;
+        }
+    }
+    .container_textAndImg{
+        display:flex;
+        height:90vh;
+        align-items:center;
+        .container_text{
+            padding:2vh 10vh;
+            max-width:30%;
+            display:flex;
+            justify-content:flex-start;
+            height:50%;
+            p{
+                font-size:2.5vh;
+                letter-spacing: 0.3vh;
+                color:$darckGreenColor;
+            }
+        }
+        .container_img{
+            padding:2vh 10vh;
+            max-width:60%;
+            
+            img{
+                max-width:100%;
+                max-height:100%;
+            }
+        }
+    }
+    @media (max-width:900px) {
+        .container_textAndImg{
+            flex-direction:column;
+        }
+    }
+}

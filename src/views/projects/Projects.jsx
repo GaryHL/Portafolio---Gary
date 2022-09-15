@@ -9,13 +9,18 @@ function Projects() {
   return (
     <>
       <Change_page />
-      <Info_section_active
-        title="Mis"
-        title2="Proyectos"
-        img={Pc_work}
-        subtitle="Estos son algunos de mis proyectos."
-      />
-      <Project_pagination />
+      <div className="container">
+        <section className="section">
+          <Info_section_active
+            title="Mis"
+            title2="Proyectos"
+            img={Pc_work}
+            subtitle="Estos son algunos de mis proyectos."
+          />
+        </section>
+          <Project_pagination />
+        
+      </div>
     </>
   );
 }
