@@ -20,6 +20,7 @@
             margin:2vh;
         }
     }
+    
     .container_textAndImg{
         display:flex;
         height:90vh;
@@ -28,7 +29,7 @@
             padding:2vh 10vh;
             max-width:30%;
             display:flex;
-            justify-content:flex-start;
+            align-items:flex-start;
             height:50%;
             p{
                 font-size:2.5vh;
@@ -39,6 +40,7 @@
         .container_img{
             padding:2vh 10vh;
             max-width:60%;
+            height:50%;
             
             img{
                 max-width:100%;
@@ -46,9 +48,27 @@
             }
         }
     }
+    .container_textAndImg.addCta{
+        height:70vh;
+
+    }
     @media (max-width:900px) {
         .container_textAndImg{
             flex-direction:column;
+            
+            .container_text{
+                max-width:100%;
+                padding: 4vh 5vw;
+                height:25%;
+                p{
+                    font-size:1.8vh;
+                }
+            }
+            .container_img{
+                height:75%;
+                max-width:100%;
+                padding: 4vh 5vw;
+            }
         }
     }
 }

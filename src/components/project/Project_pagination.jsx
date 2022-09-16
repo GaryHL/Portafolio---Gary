@@ -84,14 +84,15 @@ function Project_pagination() {
                 <>
                   <section className="section">
                     <TextAndImg
-                      title={project.title}
+                      title="CONCEPTO"
                       text={project.concept}
                       img={project.img}
+                      addCta={true}
                     />
                   </section>
                   <section className="section">
                     <TextAndImg
-                      title={project.title}
+                      title="DESARROLLO"
                       text={project.concept}
                       img={project.img}
                     />
