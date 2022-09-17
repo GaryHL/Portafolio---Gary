@@ -12,10 +12,10 @@ function Links_project() {
         </div>
       </div>
       <div className="back">
-        <Link to="/welcome">
+        {/* <Link to="/welcome">
           <h2>BACK</h2>
           <BsArrowLeft className="arrow" />
-        </Link>
+        </Link> */}
       </div>
     </>
   );

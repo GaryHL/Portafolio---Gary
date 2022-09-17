@@ -1,10 +1,13 @@
 import React from "react";
 import "./info_section_active.scss";
 import Tilt from "react-vanilla-tilt";
+import Back_menu from "../back_menu/Back_menu"
 
 function Info_section_active(props) {
   return (
+
     <div className="container_info_section_active">
+      <Back_menu/>
       <div className="container_image_active">
         <Tilt className="tilt">
           <img src={props.img} />
@@ -23,6 +26,7 @@ function Info_section_active(props) {
         {props.cta_zone}
       </div>
     </div>
+
   );
 }
 

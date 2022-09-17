@@ -3,6 +3,7 @@ import { useState } from "react";
 import "./project_pagination.scss";
 import Project from "../../data projects/projects.json";
 import { Link } from "react-router-dom";
+import Links_project from "../links_project/Links_project";
 import {
   BsArrowLeft,
   BsFillArrowLeftCircleFill,
@@ -87,7 +88,7 @@ function Project_pagination() {
                       title="CONCEPTO"
                       text={project.concept}
                       img={project.img}
-                      addCta={true}
+                      
                     />
                   </section>
                   <section className="section">
@@ -95,6 +96,8 @@ function Project_pagination() {
                       title="DESARROLLO"
                       text={project.concept}
                       img={project.img}
+                      addCta={true}
+                      ctaZone={<Links_project/>}
                     />
                   </section>
                 </>
