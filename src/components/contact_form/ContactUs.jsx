@@ -1,8 +1,8 @@
 import React, { useRef } from "react";
-import { useState } from "react";
+import { useState ,useEffect } from "react";
+import { BsXLg } from "react-icons/bs";
 import emailjs from "emailjs-com";
 import "./contactUs.scss";
-import { useEffect } from "react";
 
 export const ContactUs = () => {
   const form = useRef();
@@ -10,7 +10,7 @@ export const ContactUs = () => {
   const sendEmail = (e) => {
     e.preventDefault();
     emailjs
-      .sendForm("gmail", "template_0622wsv", form.current, "3VVe97XYo_PofC1Gw")
+      .sendForm("service_49f8i38", "template_09hkx2n", form.current, "3VVe97XYo_PofC1Gw")
       .then(
         (result) => {
           console.log(result.text);
@@ -30,7 +30,8 @@ export const ContactUs = () => {
         <form ref={form} onSubmit={sendEmail} className="container_form">
           <div className="title_form">
             <h1>Contactame</h1>
-            <button onClick={() => setFormActive(!formActive)}>x</button>
+            <BsXLg onClick={() => setFormActive(!formActive)}/>
+            
           </div>
           <input
             type="text"
