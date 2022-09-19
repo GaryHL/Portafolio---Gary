@@ -3,20 +3,23 @@ import { Link } from "react-router-dom";
 import "../navbar/navbar.scss";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 
-
 function Navbar() {
   const [clicked, setClicked] = useState(false);
 
   return (
     <>
       <div className="container_nav">
-        <h2>Gary Lima</h2>
+        <h2 className={`name ${clicked ? "open" : ""}`}>Gary Lima</h2>
         <div className="container_icons">
-          <BsGithub />
-          <BsLinkedin />
+          <Link to="//github.com/GaryHL" target="_blank" >
+            <BsGithub />
+          </Link>
+          <Link  to="////www.linkedin.com/in/gary-lima-613611230/" target="_blank">
+            <BsLinkedin />
+          </Link>
           <div className="menu" onClick={() => setClicked(!clicked)}>
-            <div className="line"></div>
-            <div className="line"></div>
+            <div className={`line ${clicked ? "open" : ""}`}></div>
+            <div className={`line ${clicked ? "open" : ""}`}></div>
           </div>
         </div>
       </div>
