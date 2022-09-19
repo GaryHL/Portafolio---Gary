@@ -1,21 +1,19 @@
 import React from "react";
-import './links_project.scss'
+import './links_project.scss';
+import { Link } from "react-router-dom";
 
-function Links_project() {
+
+function Links_project(props) {
   return (
     <>
       <div className="container_final_result">
         <h2>Final result</h2>
         <div className="links_project">
-          <div className="square_button">Visitar sitio</div>
-          <div className="square_button">Repositorio en Github</div>
+        <Link to={props.site} target="_blank" className="square_button" >Visitar sitio</Link>
+        <Link to={props.repositorio} target="_blank" className="square_button" >Repositorio en Github</Link>
         </div>
       </div>
       <div className="back">
-        {/* <Link to="/welcome">
-          <h2>BACK</h2>
-          <BsArrowLeft className="arrow" />
-        </Link> */}
       </div>
     </>
   );

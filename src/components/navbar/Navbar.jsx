@@ -14,7 +14,7 @@ function Navbar() {
           <Link to="//github.com/GaryHL" target="_blank" >
             <BsGithub />
           </Link>
-          <Link  to="////www.linkedin.com/in/gary-lima-613611230/" target="_blank">
+          <Link  to="//www.linkedin.com/in/gary-lima-613611230/" target="_blank">
             <BsLinkedin />
           </Link>
           <div className="menu" onClick={() => setClicked(!clicked)}>

@@ -54,7 +54,7 @@ function Project_pagination() {
                             </div>
                             <div className="change_buttons">
                               <BsFillArrowLeftCircleFill onClick={prevItem} />
-                              <h3>{project.title}</h3>
+                              <h3 className="title_project">{project.title}</h3>
                               <BsFillArrowRightCircleFill onClick={nextItem} />
                             </div>
                           </>
@@ -63,7 +63,7 @@ function Project_pagination() {
                             <BsFillArrowLeftCircleFill onClick={prevItem} />
                             <div className="container_image_project">
                               <img src={project.img} />
-                              <h3>{project.title}</h3>
+                              <h3 className="title_project">{project.title}</h3>
                             </div>
                             <BsFillArrowRightCircleFill onClick={nextItem} />
                           </>
@@ -88,7 +88,6 @@ function Project_pagination() {
                       title="CONCEPTO"
                       text={project.concept}
                       img={project.img}
-                      
                     />
                   </section>
                   <section className="section">
@@ -97,7 +96,12 @@ function Project_pagination() {
                       text={project.concept}
                       img={project.img}
                       addCta={true}
-                      ctaZone={<Links_project/>}
+                      ctaZone={
+                        <Links_project
+                          site={project.deployment}
+                          repositorio={project.repositorio}
+                        />
+                      }
                     />
                   </section>
                 </>

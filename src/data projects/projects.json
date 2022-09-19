@@ -17,9 +17,9 @@
         
         "development" : "It is an application to keep people informed about the situation of covid-19 worldwide.The data is updated automatically and userscan see detailed information for each country.",
         
-        "deployment" : "https://github.com",
+        "deployment" : "//github.com",
         
-        "repositorio" : "https://github.com"
+        "repositorio" : "//github.com"
     },
     {
         "id": 2,
@@ -38,9 +38,9 @@
         
         "development" : "It is an application to keep people informed about the situation of covid-19 worldwide.The data is updated automatically and userscan see detailed information for each country.",
         
-        "deployment" : "https://github.com",
+        "deployment" : "//https://github.com",
         
-        "repositorio" : "https://github.com"
+        "repositorio" : "//https://github.com"
     },
     {
         "id": 3,

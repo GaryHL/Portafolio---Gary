@@ -62,6 +62,15 @@
         top: 0;
         z-index: 0;
       }
+      .title_project{
+        font-weight:400;
+        color:$darckGreenColor;
+        opacity:0.8;
+        font-size:3.5vh;
+        letter-spacing: 0.5vh;
+        padding:1vh;
+
+      }
       .container_image_project {
         max-width: 93%;
         position: relative;
