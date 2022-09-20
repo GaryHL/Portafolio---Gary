@@ -3,7 +3,7 @@ import { SiJavascript } from "react-icons/si";
 import React from "react";
 import Pc_work from "../../assets/images/pc_work.png";
 import Me from "../../components/Me/Me";
-import Hobbie from "../../components/hobbie/Hobbie";
+import Hobbie from "../../components/Hobbie/Hobbie";
 import SkillBar from "../../components/skillbar/Skillbar";
 import Info_section_active from "../../components/info_section_active/Info_section_active";
 import "./about_me.scss";
