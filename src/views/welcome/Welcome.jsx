@@ -17,6 +17,7 @@ function Welcome() {
 
   const activarFormulario = () =>{
     setFormActive(!formActive);
+    
 
     // setFormActive(!prevformActive);
   }

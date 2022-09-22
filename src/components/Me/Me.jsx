@@ -16,7 +16,7 @@ function Me() {
         <div className="container_image_me">
           <img
             src={
-              "https://assets.entrepreneur.com/content/3x2/2000/1651673015-shutterstock-2098527055.jpg?auto=webp&quality=95&crop=16:9&width=675"
+              "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn1.vectorstock.com%2Fi%2F1000x1000%2F39%2F35%2Fman-wearing-face-mask-environmental-industrial-vector-26743935.jpg&f=1&nofb=1"
             }
           ></img>
         </div>

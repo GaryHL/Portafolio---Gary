@@ -20,6 +20,9 @@
     max-width: 45%;
     .tilt {
       background-color: transparent !important;
+      display:flex;
+      justify-content: center;
+      align-items:center; 
       padding: 0 !important;
       box-shadow: 0vh !important;
       width: auto !important;
